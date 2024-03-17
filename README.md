@@ -1,4 +1,7 @@
 # Youtube's Intro Videos
+
+<img src="/intro-image.png" alt="Name in Youtube Intro Videos" />
+
 This small repository contains the new intros for my Youtube videos.
 
 The animations were made by simply using a .txt file containing HTML and CSS code.
