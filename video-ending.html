@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Orbitron:wght@500&display=swap');
+
+      @keyframes zooming {
+        0% {transform: scale(-7)}
+        85% {transform: scale(-1); opacity: 100%;}
+        100% {transform: scale(-1); opacity: 0%;}
+      }
+
+      @keyframes name-fading {
+        0% {opacity: 0%;}
+        75% {opacity: 0%;}
+        80% {opacity: 100%;}
+        99% {opacity: 100%;}
+        100% {opacity: 0%;}
+      }
+
+      body {
+        font-size: 100%;
+      }      
+
+      body:hover {
+        cursor: none;
+      }
+      
+      .background img {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        transform: scale(-7.5);
+        animation-name: zooming;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;     
+      }
+
+      h1 {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 75px;
+        text-align: center;
+        margin-top: 20%;
+        animation-name: name-fading;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-duration: 9.5s;
+        animation-fill-mode: forwards;     
+      }
+
+    </style>
+
+  </head>  
+
+  <body>
+    
+    <div class="background"><img src="intro-background.png" width="751" height="501"></div>
+    <h1>Thank you for watching!</h1>
+
+  </body>
+
+</html>

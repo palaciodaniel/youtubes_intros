@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Orbitron:wght@500&display=swap');
+
+      @keyframes zooming {
+        0% {transform: scale(-1); opacity: 0%;}
+        5% {transform: scale(-1); opacity: 100%;}
+        25% {transform: scale(-1); opacity: 100%;}
+        100% {transform: scale(-50); opacity: 100%;}
+      }
+
+      @keyframes name-zooming {
+        0% {font-size: 10px; margin-top: 24%; opacity: 0%;}
+        15% {font-size: 10px; margin-top: 24%; opacity: 100%;}
+        30% {font-size: 100px; margin-top: 14%;}
+        90% {font-size: 100px; margin-top: 14%; opacity: 100%;}
+        100% {font-size: 100px; margin-top: 14%; opacity: 0%;}
+      }
+
+      @keyframes jobs-appearing {
+        0% {opacity: 0%;}
+        25% {opacity: 100%;}
+        90% {opacity: 100%}
+        100% {opacity: 0%}
+      }
+
+      body {
+        font-size: 100%;
+      }      
+
+      body:hover {
+        cursor: none;
+      }
+      
+      .background img {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        opacity: 0%;
+        transform: scale(-1);
+        animation-name: zooming;
+        animation-timing-function: linear;
+        animation-delay: 1.75s;
+        animation-duration: 5.25s;
+        animation-fill-mode: forwards;     
+      }
+
+      h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 10px;
+        text-align: center;
+        margin-top: 24%;
+        opacity: 0%;
+        animation-name: name-zooming;
+        animation-timing-function: linear;
+        animation-delay: 2.75s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;     
+      }
+
+      h2 {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 35px;
+        opacity: 0%;
+        text-align: center; 
+        margin-top: -4%;
+        animation-name: jobs-appearing;
+        animation-timing-function: linear;
+        animation-delay: 3.25s;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;     
+      }
+
+    </style>
+
+  </head>  
+
+  <body>
+    
+    <div class="background">
+      <img src="intro-background.png" width="751" height="501">
+    </div>
+
+    <h1>Daniel Palacio</h1>
+    <h2>:· · D A T A · S C I E N C E · ·:· · P R O G R A M M I N G · ·:</h2>
+
+  </body>
+
+</html>
